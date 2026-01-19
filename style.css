@@ -1,0 +1,255 @@
+:root {
+  /* ✅ New Color Palette */
+  --color-primary-red: #DB1803;
+  --color-primary-blue: #5EB6D7;
+  --color-primary-light: #C5F9FF;
+  --color-primary-dark: #4A7E92;
+
+  /* ✅ Neutral Colors */
+  --color-text-p: #505050;
+  --color-text-h: #101010;
+  --color-grey-bg: #F0F0F5;
+
+  /* ✅ Fonts */
+  --font-body: "Manrope", sans-serif;
+  --font-heading: "Roboto", Arial, sans-serif;
+
+  /* ✅ Sizes */
+  --heading1: 60px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-grey-bg);
+  color: white;
+  font-family: var(--font-body); /* ✅ fixed */
+}
+
+header {
+  background-color: var(--color-primary-dark);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  background-color: var(--color-primary-light);
+  border: none;
+  font-family: var(--font-body); /* ✅ fixed */
+  cursor: pointer;
+}
+
+/* ===================== NAVBAR ===================== */
+
+.header-nav {
+  width: 1200px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  width: 1200px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+}
+
+.GHT-text h1 {
+  font-size: 20px;
+  font-family: var(--font-heading);
+}
+
+.GHT-text p {
+  font-size: 12px;
+  color: rgba(197, 249, 255, 0.75);
+}
+
+.center-nav {
+  display: flex;
+  align-items: center;
+}
+
+.center-nav button {
+  font-size: 16px; /* ✅ fixed */
+  padding: 8px 16px;
+  margin-left: 4px;
+  color: var(--color-primary-light);
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.center-nav button:hover {
+  background-color: var(--color-primary-light);
+  color: var(--color-text-h);
+  font-weight: 500;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.right-nav a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.right-nav button {
+  color: white;
+  font-weight: bold;
+  font-size: 14px; /* ✅ fixed */
+  padding: 12px 20px;
+  margin-left: 12px;
+  background-color: var(--color-primary-red);
+  border-radius: 8px;
+}
+
+.right-nav button:hover {
+  filter: brightness(0.9);
+}
+
+/* ===================== HERO SECTION ===================== */
+
+.hero-section {
+  background-color: var(--color-primary-dark);
+  height: 100vh;
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ✅ Rounded pill tag */
+.rounded-since {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 22px;
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  color: var(--color-primary-light);
+  border: 1px solid rgba(197, 249, 255, 0.6);
+  background: rgba(94, 182, 215, 0.25);
+
+  border-radius: 9999px;
+}
+
+.container h1 {
+  font-size: 60px;
+  width: 896px;
+  margin-bottom: 24px;
+  text-align: center;
+  font-family: var(--font-heading);
+}
+
+.container h1 span {
+  display: block;
+  color: var(--color-primary-red);
+}
+
+.container p {
+  color: var(--color-primary-light);
+  width: 624px;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  height: 56px;
+  margin: 0px 112px 32px;
+}
+
+/* ===================== HERO BUTTONS ===================== */
+
+.main-book {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.main-book button {
+  padding: 16px 32px;
+  font-size: 16px;
+  border-radius: 8px;
+  color: var(--color-text-h);
+  font-weight: 600;
+}
+
+#btn1 {
+  background-color: var(--color-primary-red);
+  color: white;
+}
+
+#btn1:hover {
+  filter: brightness(0.9);
+}
+
+#btn2 {
+  background-color: transparent;
+  border: 2px solid var(--color-primary-blue);
+  color: var(--color-primary-blue);
+}
+
+#btn2:hover {
+  background-color: rgba(94, 182, 215, 0.15);
+  color: white;
+}
+
+/* ===================== HERO BOTTOM STRIP ===================== */
+
+.hero-bottom-strip {
+  width: 896px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 64px;
+}
+
+.hero-bot-strip-el {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-bot-strip-top {
+  font-size: 36px;
+  margin-bottom: 8px;
+  color: var(--color-primary-blue);
+  font-weight: bold;
+}
+
+.hero-bot-strip-bot {
+  font-size: 16px;
+  color: var(--color-primary-light);
+}
