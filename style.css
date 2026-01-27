@@ -1,18 +1,25 @@
 :root {
   /* ✅ New Color Palette */
-  --color-primary-red: #DB1803;
-  --color-primary-blue: #5EB6D7;
-  --color-primary-light: #C5F9FF;
-  --color-primary-dark: #4A7E92;
+  --color-primary-red: #ed203d;
+  --color-primary-blue: #12b5e5;
+  --color-primary-yellow: #fcba28;
+  --color-primary-pink: #f38ba3;
+  --color-primary-green: #0ba95b;
+  --color-primary-purple: #7b5ea7;
+  --color-primary-orange: #fc7428;
 
   /* ✅ Neutral Colors */
-  --color-text-p: #505050;
-  --color-text-h: #101010;
-  --color-grey-bg: #F0F0F5;
+  --color-black-bg: #0f0f0e;
+  --color-white-bg: #f9f4da;
+  --color-grey-bg: #231f20;
+  --color-light-white-bg: #f7f7f7;
+
+  /* Secondary Colors */
+  --color-dark-text: rgb(235, 229, 204, 0.75);
 
   /* ✅ Fonts */
-  --font-body: "Manrope", sans-serif;
-  --font-heading: "Roboto", Arial, sans-serif;
+  --font-heading: "Barlow Condensed", sans-serif;
+  --font-body: "Outfit", sans-serif;
 
   /* ✅ Sizes */
   --heading1: 60px;
@@ -25,13 +32,13 @@
 }
 
 body {
-  background-color: var(--color-grey-bg);
-  color: white;
+  background-color: var(--color-black-bg);
+  color: var(--color-white-bg);
   font-family: var(--font-body); /* ✅ fixed */
 }
 
 header {
-  background-color: var(--color-primary-dark);
+  background-color: var(--color-black-bg);
   display: flex;
   justify-content: center;
   position: fixed;
@@ -42,11 +49,10 @@ header {
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--color-white-bg);
 }
 
 button {
-  background-color: var(--color-primary-light);
   border: none;
   font-family: var(--font-body); /* ✅ fixed */
   cursor: pointer;
@@ -76,13 +82,13 @@ button {
 }
 
 .GHT-text h1 {
-  font-size: 20px;
+  font-size: 24px;
   font-family: var(--font-heading);
 }
 
 .GHT-text p {
   font-size: 12px;
-  color: rgba(197, 249, 255, 0.75);
+  color: var(--color-dark-text);
 }
 
 .center-nav {
@@ -94,15 +100,30 @@ button {
   font-size: 16px; /* ✅ fixed */
   padding: 8px 16px;
   margin-left: 4px;
-  color: var(--color-primary-light);
+  color: var(--color-white-bg);
   background-color: transparent;
-  border-radius: 4px;
+  border-radius: 12px;
 }
 
 .center-nav button:hover {
-  background-color: var(--color-primary-light);
-  color: var(--color-text-h);
+  background-color: var(--color-grey-bg);
   font-weight: 500;
+}
+
+#cnt-nav-btn1:hover{
+  color:var(--color-primary-red);
+}
+#cnt-nav-btn2:hover{
+  color:var(--color-primary-green);
+}
+#cnt-nav-btn3:hover{
+  color:var(--color-primary-purple);
+}
+#cnt-nav-btn4:hover{
+  color:var(--color-primary-yellow);
+}
+#cnt-nav-btn5:hover{
+  color:var(--color-primary-blue);
 }
 
 .right-nav {
@@ -117,13 +138,13 @@ button {
 }
 
 .right-nav button {
-  color: white;
+  color: var(--color-grey-bg);
   font-weight: bold;
   font-size: 14px; /* ✅ fixed */
   padding: 12px 20px;
-  margin-left: 12px;
-  background-color: var(--color-primary-red);
-  border-radius: 8px;
+  margin-left: 20px;
+  background-color: var(--color-primary-yellow);
+  border-radius: 12px;
 }
 
 .right-nav button:hover {
@@ -133,7 +154,6 @@ button {
 /* ===================== HERO SECTION ===================== */
 
 .hero-section {
-  background-color: var(--color-primary-dark);
   height: 100vh;
   padding-top: 80px;
   display: flex;
@@ -148,8 +168,15 @@ button {
   flex-direction: column;
 }
 
+.hero-top-sec{
+  display:flex;
+  justify-content:space-between;
+  flex-direction:row;
+  padding:0px 64px;
+}
+
 /* ✅ Rounded pill tag */
-.rounded-since {
+/* .rounded-since {
   display: inline-flex;
   align-items: center;
   padding: 10px 22px;
@@ -158,19 +185,20 @@ button {
   font-size: 16px;
   font-weight: 600;
 
-  color: var(--color-primary-light);
-  border: 1px solid rgba(197, 249, 255, 0.6);
-  background: rgba(94, 182, 215, 0.25);
+  color: var(--color-light-white-bg);
+  border: 1px solid var(--color-primary-blue);
+  background: var(--color-grey-bg);
 
   border-radius: 9999px;
-}
+} */
 
 .container h1 {
   font-size: 60px;
-  width: 896px;
-  margin-bottom: 24px;
-  text-align: center;
+  /* width: 896px; */
+  margin: 32px 0px;
+  text-align: left;
   font-family: var(--font-heading);
+  line-height: 1.15;
 }
 
 .container h1 span {
@@ -179,13 +207,13 @@ button {
 }
 
 .container p {
-  color: var(--color-primary-light);
-  width: 624px;
+  color: var(--color-dark-text);
+  /* width: 624px; */
   font-size: 20px;
   display: block;
-  text-align: center;
+  text-align: left;
   height: 56px;
-  margin: 0px 112px 32px;
+  margin: 0px 112px 44px 0px;
 }
 
 /* ===================== HERO BUTTONS ===================== */
@@ -199,14 +227,13 @@ button {
 .main-book button {
   padding: 16px 32px;
   font-size: 16px;
-  border-radius: 8px;
-  color: var(--color-text-h);
-  font-weight: 600;
+  border-radius: 12px;
+  font-weight: bold;
 }
 
 #btn1 {
-  background-color: var(--color-primary-red);
-  color: white;
+  background-color: var(--color-primary-yellow);
+  color: var(--color-grey-bg);
 }
 
 #btn1:hover {
@@ -216,12 +243,65 @@ button {
 #btn2 {
   background-color: transparent;
   border: 2px solid var(--color-primary-blue);
-  color: var(--color-primary-blue);
+  color: var(--color-white-bg);
 }
 
 #btn2:hover {
-  background-color: rgba(94, 182, 215, 0.15);
-  color: white;
+  background-color: var(--color-grey-bg);
+  color: var(--color-light-white-bg);
+}
+
+/* ===================== HERO RIGHT IMAGE TAB ===================== */
+
+.hero-image-tab {
+  width: 460px;
+  height: 320px;
+  margin-top: 48px;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.45);
+}
+
+.hero-images {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.hero-img.active {
+  opacity: 1;
+}
+
+.hero-image-scroll {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.hero-scroll-circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-dark-text);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hero-scroll-circle.active {
+  background-color: var(--color-white-bg);
+  transform: scale(1.3);
 }
 
 /* ===================== HERO BOTTOM STRIP ===================== */
@@ -231,15 +311,34 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 64px;
+  margin-top: 60px;
 }
 
 .hero-bot-strip-el {
   width: 200px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  padding: 16px 20px;
+
+  /* display: inline-flex; */
+  /* align-items: center; */
+  /* padding: 10px 22px; */
+  /* margin-bottom: 16px; */
+
+  /* font-size: 16px;
+  font-weight: 600; */
+
+  color: var(--color-white-bg);
+  /* border: 1px solid rgba(197, 249, 255, 0.6); */
+  /* background: var(--color-grey-bg);
+  border-radius:16px; */
+}
+
+.hero-bot-strip-el:hover{
+  background: var(--color-grey-bg);
+  border-radius:16px;
 }
 
 .hero-bot-strip-top {
@@ -248,6 +347,20 @@ button {
   color: var(--color-primary-blue);
   font-weight: bold;
 }
+
+#hero-bot-top-txt-1 {
+  color:var(--color-primary-green);
+}
+#hero-bot-top-txt-2 {
+  color:var(--color-primary-orange);
+}
+#hero-bot-top-txt-3 {
+  color:var(--color-primary-purple);
+}
+#hero-bot-top-txt-4 {
+  color:var(--color-primary-pink);
+}
+
 
 .hero-bot-strip-bot {
   font-size: 16px;
