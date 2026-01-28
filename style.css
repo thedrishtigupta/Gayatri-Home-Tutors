@@ -112,8 +112,8 @@ ul{
   align-items: center;
 }
 
-.center-nav button {
-  font-size: 16px; /* ✅ fixed */
+.center-nav a {
+  font-size: 16px;
   padding: 8px 16px;
   margin-left: 4px;
   color: var(--color-white-bg);
@@ -121,8 +121,8 @@ ul{
   border-radius: 12px;
 }
 
-.center-nav button:hover {
-  background-color: var(--color-grey-bg);
+.center-nav a:hover {
+  /* background-color: var(--color-grey-bg); */
   font-weight: 500;
 }
 
@@ -133,10 +133,10 @@ ul{
   color:var(--color-primary-green);
 }
 #cnt-nav-btn3:hover{
-  color:var(--color-primary-purple);
+  color:var(--color-primary-pink);
 }
 #cnt-nav-btn4:hover{
-  color:var(--color-primary-yellow);
+  color:var(--color-primary-orange);
 }
 #cnt-nav-btn5:hover{
   color:var(--color-primary-blue);
@@ -158,7 +158,7 @@ ul{
   width:16px;
 }
 
-.right-nav button {
+.book-btn {
   color: var(--color-grey-bg);
   font-weight: bold;
   font-size: 14px; /* ✅ fixed */
@@ -168,7 +168,7 @@ ul{
   border-radius: 12px;
 }
 
-.right-nav button:hover {
+.book-btn:hover {
   filter: brightness(0.9);
 }
 
