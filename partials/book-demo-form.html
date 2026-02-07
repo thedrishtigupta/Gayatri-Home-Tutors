@@ -1,0 +1,82 @@
+<form class="book-demo-form">
+    <!-- Full Name -->
+    <div class="form-group">
+        <label for="fullName">Full Name <span class="required">*</span></label>
+        <input type="text" id="fullName" name="fullName" required />
+    </div>
+
+    <!-- Email + Phone -->
+    <div class="form-row">
+        <div class="form-group">
+            <label for="email">Email <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone <span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" required />
+        </div>
+    </div>
+
+    <!-- Class + Preferred Time -->
+    <div class="form-row">
+        <div class="form-group">
+            <label for="class">Student's Class</label>
+            <select id="class" name="class">
+                <option value="">Select Class</option>
+                <option>Class 1–5</option>
+                <option>Class 6–8</option>
+                <option>Class 9–10</option>
+                <option>Class 11–12</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="time">Preferred Time</label>
+            <select id="time" name="time">
+                <option value="">Select Time</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Subjects -->
+    <div class="form-group">
+        <label>Subjects Required</label>
+        <div class="checkbox-grid">
+            <label><input type="checkbox" name="subjects[]" value="Maths"> Mathematics</label>
+            <label><input type="checkbox" name="subjects[]" value="English"> English</label>
+            <label><input type="checkbox" name="subjects[]" value="Social Studies"> Social Studies</label>
+            <label><input type="checkbox" name="subjects[]" value="Chemistry"> Chemistry</label>
+            <label><input type="checkbox" name="subjects[]" value="Accounts"> Accounts</label>
+
+            <label><input type="checkbox" name="subjects[]" value="Science"> Science</label>
+            <label><input type="checkbox" name="subjects[]" value="Hindi"> Hindi</label>
+            <label><input type="checkbox" name="subjects[]" value="Physics"> Physics</label>
+            <label><input type="checkbox" name="subjects[]" value="Biology"> Biology</label>
+            <label><input type="checkbox" name="subjects[]" value="Economics"> Economics</label>
+            <label><input type="checkbox" name="subjects[]" value="Biology"> Business Studies</label>
+            <label><input type="checkbox" name="subjects[]" value="Economics"> Computer Science</label>
+        </div>
+    </div>
+
+    <!-- Area -->
+    <div class="form-group">
+        <label for="area">Your Area</label>
+        <input type="text" id="area" name="area" placeholder="e.g. Pitampura, Rohini" />
+    </div>
+
+    <!-- Message -->
+    <div class="form-group">
+        <label for="message">Additional Message</label>
+        <textarea id="message" name="message" rows="4"
+            placeholder="Tell us more about your requirements..."></textarea>
+    </div>
+
+    <!-- Submit -->
+    <button type="submit" class="submit-btn">
+        Book Free Demo
+    </button>
+</form>

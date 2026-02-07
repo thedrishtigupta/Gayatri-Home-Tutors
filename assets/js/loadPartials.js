@@ -11,3 +11,11 @@ fetch("partials/footer.html")
     .then(data => {
         document.getElementById("footer").innerHTML = data;
     });
+
+
+
+fetch('partials/book-demo-form.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById('book-demo-form-container').innerHTML = data;
+    });
