@@ -66,6 +66,7 @@ ul{
 
 h1, h2, h3, h4 {
   font-weight: 300;
+  font-family:var(--font-heading);
 }
 
 /* ===================== NAVBAR ===================== */
@@ -535,6 +536,165 @@ footer{
   font-size: 24px;
 }
 
+.section-body{
+  display:flex;
+  align-items:center;
+  /* justify-content: center; */
+  padding: 32px 32px;
+  margin-top:84px;
+}
+
+
+
+
+/* ===================== Contact page styles===================== */
+#contact-heading{
+  background-color: var(--color-primary-blue);
+}
+
+.contact-grid{
+  width:100%;
+  margin: 0px 120px;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+/* ===================== Form styles ===================== */
+
+.form-div {
+  background-color: var(--color-primary-green);
+  padding: 32px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Head inside left column */
+.send-message h2 {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+/* Form base */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Group wrapper */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Labels */
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-black-bg);
+}
+
+.required {
+  color: var(--color-primary-red);
+}
+
+/* Inputs, select, textarea */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  font-family: var(--font-body);
+  outline: none;
+  /* transition: border-color 0.2s ease, box-shadow 0.2s ease; */
+}
+
+
+
+/* Focus state */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--color-primary-blue);
+  box-shadow: 0 0 0 1px var(--color-grey-bg);
+}
+
+/* Two-column rows */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* Checkbox grid */
+.checkbox-grid {
+  background-color: white;
+  padding: 16px 14px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 16px;
+  max-height: 140px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.checkbox-grid label {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border:none;
+}
+
+.checkbox-grid input {
+  accent-color: var(--color-primary-blue);
+}
+
+/* Submit button */
+.submit-btn {
+  margin-top: 16px;
+  padding: 14px;
+  background-color: var(--color-primary-yellow);
+  color: var(--color-black-bg);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.submit-btn:hover {
+  filter: brightness(0.9);
+}
+
+.submit-btn:active {
+  transform: translateY(1px);
+}
+
+/* ===================== Responsive ===================== */
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+    margin: 0 24px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
 /* ===================== About us page styles===================== */
 
 
@@ -559,13 +719,4 @@ footer{
 #become-tutor-heading{
   background-color: var(--color-primary-orange);
 }
-
-
-/* ===================== Contact page styles===================== */
-#contact-heading{
-  background-color: var(--color-primary-blue);
-}
-
-
-
 
