@@ -274,8 +274,8 @@ h1, h2, h3, h4 {
 }
 
 #btn2:hover {
-  background-color: var(--color-grey-bg);
-  color: var(--color-light-white-bg);
+  background-color: var(--color-primary-blue);
+  color: var(--color-black-bg);
 }
 
 /* ===================== HERO RIGHT IMAGE TAB ===================== */
