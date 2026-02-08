@@ -778,40 +778,80 @@ footer{
 }
 
 .about-mission {
-  margin: 0px 324px;
-  padding: 0px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 32px;
+  margin: 0px 320px;
 }
 
-.about-mission p {
+.mission-content {
+  max-width: 52ch;
+  text-align: left;
+}
+
+.mission-content p {
   font-size: 24px;
-  margin-bottom:40px;
-  max-width:56ch;
-  display:block;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  color: var(--color-white-bg);
 }
 
-.book-button{
-  display:flex;
-  align-items:center;
-  justify-content: center;
+/* Highlighted inline text (pink-ish in reference) */
+.highlight {
+  color: var(--color-primary-pink);
+  font-weight: 500;
 }
 
-.book-button span {
-  padding: 16px 24px;
-  background-color: var(--color-primary-yellow);
+
+.green-text {
+  color:var(--color-primary-green);
+}
+
+.blue-text {
+  color:var(--color-primary-blue);
+}
+.red-text {
+  color:var(--color-primary-red);
+}
+.purple-text {
+  color:var(--color-primary-purple);
+}
+.orange-text {
+  color:var(--color-primary-orange);
+}
+.yellow-text {
+  color:var(--color-primary-yellow);
+}
+.pink-text {
+  color:var(--color-primary-pink);
+}
+
+/* Button */
+.book-button {
+  margin-top: 32px;
+}
+
+.book-button a {
   display: inline-flex;
   align-items: center;
-
-  /* border: 1px solid var(--color-primary-yellow); */
-  background: var(--color-primary-yellow);
-
-  border-radius: 9999px;
-}
-
-.book-button a{
-  font-size: 16px;
-  font-weight: 600;
+  justify-content: center;
+  padding: 18px 32px;
+  background-color: var(--color-primary-yellow);
   color: var(--color-black-bg);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 9999px;
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
+
+.book-button a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45);
+}
+
 
 
 /* ===================== Services page styles===================== */
