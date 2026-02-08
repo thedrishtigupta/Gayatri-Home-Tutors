@@ -777,6 +777,42 @@ footer{
   background-color: var(--color-primary-green);
 }
 
+.about-mission {
+  margin: 0px 324px;
+  padding: 0px 32px;
+}
+
+.about-mission p {
+  font-size: 24px;
+  margin-bottom:40px;
+  max-width:56ch;
+  display:block;
+}
+
+.book-button{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.book-button span {
+  padding: 16px 24px;
+  background-color: var(--color-primary-yellow);
+  display: inline-flex;
+  align-items: center;
+
+  /* border: 1px solid var(--color-primary-yellow); */
+  background: var(--color-primary-yellow);
+
+  border-radius: 9999px;
+}
+
+.book-button a{
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-black-bg);
+}
+
 
 /* ===================== Services page styles===================== */
 #services-heading{
