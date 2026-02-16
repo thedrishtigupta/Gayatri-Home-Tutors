@@ -34,7 +34,8 @@
 body {
   background-color: var(--color-black-bg);
   color: var(--color-white-bg);
-  font-family: var(--font-body); /* ✅ fixed */
+  font-family: var(--font-body);
+  overflow-x: hidden;
 }
 
 header {
@@ -854,6 +855,7 @@ footer{
   background-color: var(--color-grey-bg);
   border-radius:16px;
   padding: 80px 88px;
+  margin-bottom:56px;
 }
 
 .upper-values {
@@ -908,6 +910,72 @@ footer{
   color:var(--color-dark-text);
   line-height:1.6;
   font-weight: 300;
+}
+
+/* ---------Card styles--------- */
+
+.card-section {
+  padding: 80px 0;
+}
+
+.card-track {
+  display: flex;
+  gap: 40px;
+  width:fit-content;
+  transform: skewY(-5deg);
+}
+
+.card {
+  width: 360px;
+  min-height: 200px;
+  background-color: var(--color-grey-bg);
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;      /* 🔥 important */
+  justify-content: space-between; /* pushes author to bottom */
+  padding: 24px;               /* add internal spacing */
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+  transform: skewY(5deg);
+  z-index: var(--i);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: skewY(5deg) translateY(-10px);
+}
+
+
+
+.quote-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.quote-mark {
+    font-size: 20px;
+    line-height: 1;
+    color: rgba(255,255,255,0.6);
+}
+
+.quote-text {
+    font-size: 8px;
+    line-height: 1.2;
+    margin: 0;
+    color: rgba(255,255,255,0.85);
+}
+
+.quote-mark.closing {
+    align-self: flex-end;
+}
+
+.quote-author {
+    text-align: right;
+    font-weight: 600;
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+    margin-top: auto;
 }
 
 

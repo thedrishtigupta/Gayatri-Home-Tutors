@@ -27,3 +27,21 @@ setInterval(() => {
     current = (current + 1) % images.length;
     updateSlider(current);
 }, 3000);
+
+
+// const track = document.querySelector(".card-track");
+
+// let scrollAmount = 0;
+
+// function autoScroll() {
+//   scrollAmount += 0.5;
+//   track.scrollLeft = scrollAmount;
+
+//   if (scrollAmount >= track.scrollWidth - track.clientWidth) {
+//     scrollAmount = 0;
+//   }
+
+//   requestAnimationFrame(autoScroll);
+// }
+
+// autoScroll();
