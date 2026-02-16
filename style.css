@@ -853,7 +853,7 @@ footer{
 .our-values{
   background-color: var(--color-grey-bg);
   border-radius:16px;
-  padding: 36px 100px;
+  padding: 80px 88px;
 }
 
 .upper-values {
@@ -883,9 +883,20 @@ footer{
   border-radius: 12px;
   display:grid;
   grid-template-rows: auto;
-  gap:8px;
-  padding: 16px;
+  gap:12px;
+  padding: 28px 16px;
   text-align:center;
+  /* box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); */
+}
+
+.grid-els:hover{
+  transform: translateY(-4px);
+  transition: 0.3s ease;
+}
+
+.grid-icon img{
+  width: 32px;
+  height: 32px;
 }
 
 .grid-els h3{
@@ -895,6 +906,8 @@ footer{
 .grid-els p{
   font-size: 16px;
   color:var(--color-dark-text);
+  line-height:1.6;
+  font-weight: 300;
 }
 
 
