@@ -534,7 +534,7 @@ footer{
   font-family: var(--font-heading);
 }
 
-.sections p{
+.sections-p{
   display:block;
   font-size: 24px;
 }
@@ -915,7 +915,9 @@ footer{
 /* ---------Card styles--------- */
 
 .card-section {
+
   padding: 80px 0;
+  margin:40px 0px;
 }
 
 .card-track {
@@ -927,7 +929,6 @@ footer{
 
 .card {
   width: 360px;
-  min-height: 200px;
   background-color: var(--color-grey-bg);
   border-radius: 20px;
   color: white;
@@ -960,22 +961,89 @@ footer{
 }
 
 .quote-text {
-    font-size: 8px;
-    line-height: 1.2;
-    margin: 0;
-    color: rgba(255,255,255,0.85);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+  color:var(--color-white-bg);
 }
 
-.quote-mark.closing {
-    align-self: flex-end;
+.quote-text::after {
+    content: " ”";
+    font-size: 22px;
+    opacity: 0.6;
+}
+
+.caption{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  color:var(--color-dark-text);
+}
+
+.left-caption{
+  text-align:left;
+}
+
+.left-caption p {
+  font-size:12px;
+}
+
+.right-caption {
+  text-align:right;
+}
+
+.right-location{
+  font-size:12px;
 }
 
 .quote-author {
     text-align: right;
-    font-weight: 600;
-    font-size: 12px;
-    color: rgba(255,255,255,0.7);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-light-white-bg);
     margin-top: auto;
+}
+
+.about-strip{
+  padding:24px;
+  margin-bottom:80px;
+}
+
+.about-strip p{
+  font-size:20px;
+  font-weight: 400;
+}
+
+
+.lower-choose-grid{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-rows: repeat(2, auto);
+  gap:16px;
+}
+
+.choose-grid-els{
+  background-color: var(--color-black-bg);
+  border-radius: 12px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding: 16px;
+  /* text-align:center; */
+  /* box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); */
+}
+
+.choose-grid-els:hover{
+  transform: translateY(-4px);
+  transition: 0.3s ease;
+}
+
+.choose-grid-els p{
+  font-size: 16px;
+  /* color:var(--color-dark-text); */
+  line-height:1.6;
+  font-weight: 300;
 }
 
 
@@ -1001,7 +1069,7 @@ footer{
 /* ===================== Pages hero styles===================== */
 
 .pages-hero {
-  margin-top:80px;
+  margin:80px 0px;
 }
 
 .page-sections {
