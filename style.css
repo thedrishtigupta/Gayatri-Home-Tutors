@@ -987,7 +987,7 @@ footer{
   display:flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--color-white-bg);
+  color: var(--color-grey-bg);
   /* opacity: 0.8; */
   padding-left:16px;
 }
@@ -1086,7 +1086,7 @@ footer{
 .page-sections {
   display:flex;
   flex-direction: column;
-  margin-bottom: 96px;
+  /* margin-bottom: 96px; */
   /* padding: 80px 32px 0px; */
 }
 
@@ -1113,4 +1113,37 @@ footer{
   color:var(--color-grey-bg);
   font-weight: 500;
   font-size:24px;
+}
+
+.pages-cta{
+  margin-bottom:80px;
+  padding:80px 56px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.left-cta h3{
+  margin: 32px 0px;
+  font-size: 72px;
+  text-transform:uppercase;
+  font-weight: 600;
+}
+
+.left-cta h4{
+  width:720px;
+  display:block;
+  font-weight:400;
+  margin-bottom: 36px;
+  font-size: 36px;
+}
+
+.left-cta p{
+  margin-bottom: 48px;
+  font-size: 24px;
+}
+
+.right-cta{
+  margin-top:40px;
+  width:400px;
+  height:400px;
 }
