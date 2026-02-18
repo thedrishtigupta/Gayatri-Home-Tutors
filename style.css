@@ -1,18 +1,18 @@
 :root {
   /* ✅ New Color Palette */
-  --color-primary-red: #ed203d;
-  --color-primary-blue: #12b5e5;
-  --color-primary-yellow: #fcba28;
-  --color-primary-pink: #f38ba3;
-  --color-primary-green: #0ba95b;
-  --color-primary-purple: #7b5ea7;
-  --color-primary-orange: #fc7428;
+  --color-primary-red: rgb(237, 32, 61);
+  --color-primary-blue: rgb(18, 181, 229);
+  --color-primary-yellow: rgb(252, 186, 40);
+  --color-primary-pink: rgb(243, 139, 163);
+  --color-primary-green: rgb(11, 169, 91);
+  --color-primary-purple: rgb(123, 94, 167);
+  --color-primary-orange: rgb(252, 116, 40);
 
   /* ✅ Neutral Colors */
-  --color-black-bg: #0f0f0e;
-  --color-white-bg: #f9f4da;
-  --color-grey-bg: #231f20;
-  --color-light-white-bg: #f7f7f7;
+  --color-black-bg: rgb(15, 15, 14);
+  --color-white-bg: rgb(249, 244, 218);
+  --color-grey-bg: rgb(35, 31, 32);
+  --color-light-white-bg: rgb(247, 247, 247);
 
   /* Secondary Colors */
   --color-dark-text: rgb(235, 229, 204, 0.75);
@@ -24,6 +24,51 @@
   /* ✅ Sizes */
   --heading1: 60px;
 }
+
+.green {
+  background-color: var(--color-primary-green);
+}
+
+.blue{
+  background-color: var(--color-primary-blue);
+}
+
+.purple {
+  background-color: var(--color-primary-purple);
+}
+
+.pink{
+  background-color: var(--color-primary-pink);
+}
+
+.orange {
+  background-color: var(--color-primary-orange);
+}
+
+
+.green-text {
+  color:var(--color-primary-green);
+}
+
+.blue-text {
+  color:var(--color-primary-blue);
+}
+.red-text {
+  color:var(--color-primary-red);
+}
+.purple-text {
+  color:var(--color-primary-purple);
+}
+.orange-text {
+  color:var(--color-primary-orange);
+}
+.yellow-text {
+  color:var(--color-primary-yellow);
+}
+.pink-text {
+  color:var(--color-primary-pink);
+}
+
 
 * {
   padding: 0;
@@ -735,25 +780,7 @@ footer{
   margin-bottom: 4px;
 }
 
-.green {
-  background-color: var(--color-primary-green);
-}
 
-.blue{
-  background-color: var(--color-primary-blue);
-}
-
-.purple {
-  background-color: var(--color-primary-purple);
-}
-
-.pink{
-  background-color: var(--color-primary-pink);
-}
-
-.orange {
-  background-color: var(--color-primary-orange);
-}
 
 
 
@@ -805,29 +832,6 @@ footer{
   font-weight: 500;
 }
 
-
-.green-text {
-  color:var(--color-primary-green);
-}
-
-.blue-text {
-  color:var(--color-primary-blue);
-}
-.red-text {
-  color:var(--color-primary-red);
-}
-.purple-text {
-  color:var(--color-primary-purple);
-}
-.orange-text {
-  color:var(--color-primary-orange);
-}
-.yellow-text {
-  color:var(--color-primary-yellow);
-}
-.pink-text {
-  color:var(--color-primary-pink);
-}
 
 /* Button */
 .book-button {
@@ -929,9 +933,9 @@ footer{
 
 .card {
   width: 360px;
-  background-color: var(--color-grey-bg);
+  /* background-color: var(--color-grey-bg); */
   border-radius: 20px;
-  color: white;
+  /* color: white; */
   display: flex;
   flex-direction: column;      /* 🔥 important */
   justify-content: space-between; /* pushes author to bottom */
@@ -940,6 +944,7 @@ footer{
   transform: skewY(5deg);
   z-index: var(--i);
   transition: transform 0.3s ease;
+  gap:16px;
 }
 
 .card:hover {
@@ -955,30 +960,36 @@ footer{
 }
 
 .quote-mark {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1;
-    color: rgba(255,255,255,0.6);
+    color: var(--color-white-bg);
+    opacity: 0.6;
 }
 
 .quote-text {
+  /* width:24ch; */
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.4;
   margin: 0;
-  color:var(--color-white-bg);
+  color:var(--color-black-bg);
 }
 
 .quote-text::after {
-    content: " ”";
-    font-size: 22px;
-    opacity: 0.6;
+  color:var(--color-white-bg);
+  content: " ”";
+  font-size: 22px;
+  line-height: 1;
+  opacity: 0.6;
 }
 
 .caption{
   display:flex;
   align-items: center;
   justify-content: space-between;
-  color:var(--color-dark-text);
+  color: var(--color-white-bg);
+  /* opacity: 0.8; */
+  padding-left:16px;
 }
 
 .left-caption{
@@ -999,7 +1010,7 @@ footer{
 
 .quote-author {
     text-align: right;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     color: var(--color-light-white-bg);
     margin-top: auto;
