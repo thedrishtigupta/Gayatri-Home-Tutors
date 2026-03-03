@@ -36,7 +36,7 @@ This project is being developed as a database-driven web application and will al
 
 ## 📂 Project Structure (Planned)
 
-
+```
 gayatri-home-tutor/
 │
 ├── frontend/ # Static frontend files
@@ -56,7 +56,7 @@ gayatri-home-tutor/
 │
 ├── README.md
 
-
+```
 ---
 
 ## ⚙️ Development Setup (Basic)
