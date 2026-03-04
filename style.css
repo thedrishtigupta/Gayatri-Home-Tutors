@@ -1109,6 +1109,7 @@ footer{
 }
 
 .subjects-grid-els {
+  color:var(--color-black-bg);
   width:220px;
   padding:16px 24px;
   display:flex;
@@ -1125,7 +1126,7 @@ footer{
 
 .subjects-grid-upper-el{
   margin-bottom: 16px;
-  border-bottom: 2px solid var(--color-dark-text);
+  border-bottom: 2px solid var(--color-grey-bg);
   padding-bottom: 8px;
 }
 
