@@ -19,3 +19,23 @@ fetch('partials/book-demo-form.html')
     .then(data => {
         document.getElementById('book-demo-form-container').innerHTML = data;
     });
+
+fetch('partials/about-sections.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById('about-sections').innerHTML = data;
+    });
+
+
+fetch('partials/services-sections.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById('services-sections').innerHTML = data;
+    });
+
+
+fetch('partials/contact-sections.html')
+    .then(res => res.text())
+    .then(data => {
+        document.getElementById('contact-sections').innerHTML = data;
+    });
